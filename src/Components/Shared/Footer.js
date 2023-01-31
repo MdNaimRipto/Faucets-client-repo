@@ -2,9 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h2>This is Footer</h2>
-        </div>
+        <p className='footer'>© copyright 2023 - All Right Reserved by Faucet</p>
     );
 };
 

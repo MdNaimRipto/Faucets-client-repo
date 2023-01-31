@@ -1,4 +1,3 @@
-import { Box } from '@mui/material';
 import React, { createContext, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from '../Components/Shared/Footer';
@@ -17,11 +16,7 @@ const Main = () => {
         <OptionContext.Provider value={value}>
             <div>
                 <Navbar />
-                <Box sx={{
-                    height: "100vh"
-                }}>
-                    <Outlet />
-                </Box>
+                <Outlet />
                 <Footer />
             </div>
         </OptionContext.Provider>

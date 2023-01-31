@@ -241,11 +241,24 @@ function ResponsiveAppBar() {
                                     display: "block",
                                     fontSize: "15px!important",
                                     padding: "5px 10px",
-                                    fontFamily: "Varela Round,sans-serif",
-                                    fontWeight: "semibold"
+                                    fontFamily: "sans-serif"
                                 }}
                             >
-                                <Link to="">
+                                <Link to="/adminDashboard" className='nav-link'>
+                                    Admin Dashboard
+                                </Link>
+                            </MenuItem>
+                            <MenuItem
+                                sx={{
+                                    width: "160px",
+                                    color: "#6d7380",
+                                    display: "block",
+                                    fontSize: "15px!important",
+                                    padding: "5px 10px",
+                                    fontFamily: "sans-serif"
+                                }}
+                            >
+                                <Link to="/login" className='nav-link'>
                                     Login
                                 </Link>
                             </MenuItem>
@@ -256,21 +269,26 @@ function ResponsiveAppBar() {
                                     display: "block",
                                     fontSize: "15px!important",
                                     padding: "5px 10px",
-                                    fontFamily: "Varela Round,sans-serif",
-                                    fontWeight: "semibold"
+                                    fontFamily: "sans-serif"
                                 }}
-                            >Register</MenuItem>
+                            >
+                                <Link to='/register' className='nav-link'>
+                                    Register
+                                </Link>
+                            </MenuItem>
                             <MenuItem
                                 sx={{
                                     width: "160px",
-                                    color: "#6d7380",
                                     display: "block",
                                     fontSize: "15px!important",
                                     padding: "5px 10px",
-                                    fontFamily: "Varela Round,sans-serif",
-                                    fontWeight: "semibold"
+                                    fontFamily: "sans-serif",
                                 }}
-                                onClick={handleClose}>Faq</MenuItem>
+                                onClick={handleClose}>
+                                <Link to="/faq" className='nav-link'>
+                                    Faq
+                                </Link>
+                            </MenuItem>
                         </Menu>
                     </Box>
                 </Toolbar>

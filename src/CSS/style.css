@@ -1,3 +1,14 @@
+/* Navbar Section */
+
+.nav-link {
+    text-decoration: none;
+    color: #6d7380;
+    font-weight: 500;
+}
+
+
+/* Test Form Section */
+
 .options {
     font-weight: bold;
     margin-left: 3px;
@@ -19,7 +30,7 @@
     font-weight: 400
 }
 
-.test-form {
+.test-form-container {
     background: #fff;
     border: 1px solid #eee;
     padding: 25px 20px;
@@ -36,4 +47,150 @@
 .form-warning p {
     font-size: 15px;
     margin-left: 10px;
+}
+
+.test-form {
+    width: 50%;
+}
+
+.wallet-address {
+    width: 100%;
+    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.form-label {
+    color: #9b1fe9;
+    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.wallet-input,
+.test-field,
+.ETH-field {
+    width: 100%;
+    margin-right: 10px;
+    display: inline-flex
+}
+
+.wallet-input input,
+.test-field input,
+.ETH-field input {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.request-section {
+    margin-top: 10px;
+}
+
+.req-fields {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.req-btn {
+    background: #9b1fe9;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    transition: 0.8s;
+}
+
+.req-btn:disabled {
+    background-color: #6d738096;
+    cursor: default;
+}
+
+.req-history {
+    margin-top: 30px;
+}
+
+.req-history h5 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.req-tabs span {
+    background: #f5f7fd;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+
+.active-tab {
+    background: #00f !important;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.history-table {
+    margin-top: 25px;
+}
+
+.history-table table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.history-table table th,
+.history-table table td {
+    border: 1px solid #eee;
+    font-size: 15px;
+    min-width: 80px;
+    padding: 8px;
+}
+
+/* Footer Section */
+
+.footer {
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+
+/* Responsive Section */
+
+@media only screen and (max-width: 576px) {
+    .test-form {
+        width: 100%;
+    }
+
+    .testForm-info {
+        width: 100%;
+    }
+
+    .req-tabs {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .req-tabs span:first-child {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .history-table table {
+        overflow-x: scroll;
+        display: block;
+    }
 }

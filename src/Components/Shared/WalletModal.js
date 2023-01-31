@@ -82,7 +82,9 @@ export default function WalletModal({ open, handleCloseModal }) {
                                 padding: "20px",
                                 textAlign: "center",
                                 width: "50%",
-                            }}>
+                            }}
+                                onClick={handleCloseModal}
+                            >
                                 <img
                                     style={{
                                         width: "100px",
@@ -105,7 +107,9 @@ export default function WalletModal({ open, handleCloseModal }) {
                                 padding: "20px",
                                 textAlign: "center",
                                 width: "50%",
-                            }}>
+                            }}
+                                onClick={handleCloseModal}
+                            >
                                 <img
                                     style={{
                                         width: "100px",
